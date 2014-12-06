@@ -1,0 +1,11 @@
+---
+applications:
+- name: homebody
+  framework: node
+  memory: 128M
+  instances: 1
+  host: homebody
+  domain: mybluemix.net
+  command: node app.js
+  env:
+      DEBUG: homebody
