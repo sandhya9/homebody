@@ -89,6 +89,25 @@ var eventDetection = function() {
     });
 };
 
+var garageDoor = function(id, action) {
+
+    var deferred = when.defer();
+
+    var url = 'https://systest.digitallife.att.com:443/penguin/api/' + process.env.DL_GATEWAY  + '/devices/' +
+            id + '/garage-door-control/' + action;
+
+    restler.post(url, {headers: header} ).on('complete', function(result,response){
+
+        deferred.resolve(result);
+
+    });
+
+
+    return deferred.promise;
+};
+
+
+
 var isActive = function() {
     return active;
 };
@@ -103,4 +122,5 @@ module.exports.lightSwith = lightSwitch;
 module.exports.eventDetection = eventDetection;
 module.exports.isActive = isActive;
 module.exports.setActive = setActive;
+module.exports.garageDoor = garageDoor
 

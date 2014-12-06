@@ -20,8 +20,6 @@ router.get('/light/:action', function(req,res){
 
   dl.lightSwith(light, action).then(function(result){
 
-    console.log(result);
-
     if(result.status == 0) {
       res.send('Turned the light ' + action);
     } else {
@@ -41,6 +39,23 @@ router.get('/setactive/:active', function(req,res){
   res.send(active);
 
 });
+
+router.get('/garage/:action', function(req,res){
+
+  var action  = req.param('action');
+  var door = 'GC0500A028';
+
+  dl.garageDoor(door, action).then(function(result){
+
+    if(result.status == 0) {
+      res.send('Garage Door is ' + action);
+    } else {
+      res.send('Request failed');
+    }
+  });
+});
+
+
 
 
 module.exports = router;
