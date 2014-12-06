@@ -38,6 +38,11 @@ router.get('/active', function(req,res){
   res.send(dl.isActive());
 })
 
+router.get('/reset', function(req,res){
+  inactive = 1.0;
+  res.send('OK');
+});
+
 router.get('/setactive/:active', function(req,res){
   var active = req.param('active') == 'true';
   dl.setActive(active);

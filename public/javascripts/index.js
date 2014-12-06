@@ -15,4 +15,9 @@ $(document).ready(function(){
     setInterval(updatePanel, 2000);
 
 
+    $.get('/reset', function() {
+
+    });
+
+
 });
