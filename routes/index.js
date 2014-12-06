@@ -2,13 +2,15 @@ var express = require('express');
 var router = express.Router();
 var dl = require('../digitallife');
 var moment = require('moment');
+var accounting = require('accounting');
 
 var authenticated = false;
 
-var inactive = 70;
+var inactive = 1.0;
 
 dl.authenticate().then(function(result){
    authenticated = (result.status == 0);
+  dl.lightSwith('PE00000005', 'on');
 });
 
 /* GET home page. */
@@ -58,18 +60,18 @@ router.get('/garage/:action', function(req,res){
   });
 });
 
-router.get('/inactive', function(req,res) {
+router.get('/inactive', function(req,res){
+
+  inactive += .1;
 
 
-  var current = moment().subtract(inactive, "minutes");
+  if(inactive > 3.0) {
+    dl.lightSwith('PE00000005','off');
+  }
 
-  inactive += 5;
-
-
-
+ res.send( accounting.toFixed(inactive, 1) );
 
 });
-
 
 
 module.exports = router;

@@ -16,6 +16,7 @@
     "restler": "*",
     "when": "*",
     "moment": "*",
-    "request": "*"
+    "request": "*",
+    "accounting": "*"
   }
 }

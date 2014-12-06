@@ -12,7 +12,7 @@ $(document).ready(function(){
 
     }
 
-    setInterval(updatePanel, 5000);
+    setInterval(updatePanel, 2000);
 
 
 });
