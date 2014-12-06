@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HomeBody App</title>
+
+    <link href="css/homebody.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/alerts.js"></script>
+
+  </head>
+  <body>
+    <div class="content">
+    <h1><a href="alert-overlay.html">My Alerts</a></h1>
+    <a href="index.html"><img class="back-btn" src="images/back.png"></a>
+    <div class="blue-bg">
+      <div class="alert-preferences">
+        <div class="hour-picker">
+        <p class="label-alerts">Select max inactivity hour:</p>
+        <h2 id="number-hour">3.0</h2><h3>hrs</h3> 
+        </div>
+         <img class="slider" src="images/slider.png">
+      </div>
+      <div class="device-preferences">
+       <div class="lights"> 
+        <p class="label-alerts">Turn Lights On:</p>
+        <ul>
+          <a><img class="radio-btn" src="images/selected.png"><li>Living Room Switch 1 - Lamp</li></a>
+          <a><img class="radio-btn" src="images/unselected.png"><li>Kitchen Dimmer</li></a>
+        </ul>
+      </div>
+      <div class="thermostat"> 
+        <p class="label-alerts">Adjust Theremostat to Ideal Temp:</p>
+        <ul>
+          <a><img class="radio-btn" src="images/selected.png"><li>Main-unit Thermostat</li></a>
+        </ul>
+      </div>
+      <div class="devices-off"> 
+        <p class="label-alerts">Turn Off Devices:</p>
+        <ul>
+          <a><img class="radio-btn" src="images/selected.png"><li>Living Room Swtich 2 - TV</li></a>
+        </ul>
+      </div>
+      <div class="other"> 
+        <p class="label-alerts">Other:</p>
+        <img class="toggle" src="images/toggle.png">
+        <p>Send Push Notifications</p>
+      </div>
+    </div>
+    </div>
+  </div>
+  </body>
+</html>

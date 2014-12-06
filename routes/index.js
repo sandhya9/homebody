@@ -1,17 +1,20 @@
 var express = require('express');
 var router = express.Router();
 var dl = require('../digitallife');
+var moment = require('moment');
 
 var authenticated = false;
+
+var inactive = 70;
 
 dl.authenticate().then(function(result){
    authenticated = (result.status == 0);
 });
 
 /* GET home page. */
-router.get('/', function(req, res) {
+/*router.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
-});
+});*/
 
 router.get('/light/:action', function(req,res){
 
@@ -55,6 +58,17 @@ router.get('/garage/:action', function(req,res){
   });
 });
 
+router.get('/inactive', function(req,res) {
+
+
+  var current = moment().subtract(inactive, "minutes");
+
+  inactive += 5;
+
+
+
+
+});
 
 
 

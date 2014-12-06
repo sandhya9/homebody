@@ -1,0 +1,196 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: .03em;
+  font-size: 22px;
+  color: #fff;
+  font-weight: 300;
+  padding-top:25px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size:36px;
+  color: #fff;
+  font-weight: 400;
+  float: left;
+  display: block;
+  padding: 0 5px 0 18px;
+  margin: 0;
+}
+
+h3 {
+  font-size:14px;
+  color: #fff;
+  font-weight: 300;
+  padding: 16px 0 0 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.label {
+  font-size: 12px;
+  letter-spacing: .05em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #fff;
+  float: left;
+
+}
+
+.back-btn {
+  width: 15%;
+  display: block;
+  margin: 0 auto;
+  float: left;
+  position: absolute;
+  top: 35px;
+  margin-left: 20px;
+
+}
+
+.hours {
+  float: left;
+  width: 140px;
+  margin: 0 0 0 20px;
+}
+
+.hours p {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+.alert-btn {
+  float: right;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  border: solid 1px #fff;
+  padding: 5px 20px;
+  margin: 20px 20px 0 0;
+}
+
+.alert-btn a {
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: .08em;
+  font-weight: 300;
+  text-transform: uppercase;;
+  color: #fff;
+}
+
+.content {
+  background: url("../images/dashboard-bg.png");
+  background-position: top left;
+  position: absolute;
+  width: 320px;
+ }
+
+.goal {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+
+.daily-activity{
+  margin-top: 20px;
+}
+
+.dailygraph {
+  background: url("../images/dashboard-bottombg.png");
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  bottom: 0;
+}
+
+.label-alerts {
+  font-size: 14px;
+  letter-spacing: .05em;
+  font-weight: 300;
+  color: #fff;
+  width: 100%;
+}
+
+.hour-picker {
+  width: 110px;
+  float: left;
+}
+
+.hour-picker p {
+  width: 290px;
+  padding: 10px 15px;
+  background: #167ba0;
+  margin: 20px 0 10px 0;
+}
+
+.slider {
+  width: 50%;
+  float: right;
+  margin:76px 30px 15px 0;
+}
+
+.alert-preferences {
+  height: 110px;
+}
+
+.device-preferences .label-alerts {
+  width: 290px;
+  padding: 10px 15px;
+  background: #167ba0;
+  margin: 20px 0 10px 0;
+}
+
+.device-preferences li {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: .08em;
+  color: #fff;
+  padding: 5px 0 0 5px;
+  list-style: none;
+  line-height: 24px;
+}
+
+.radio-btn {
+  width: 10%;
+  float: left;
+  left: 10px;
+  position: absolute;
+}
+
+.other p {
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: .08em;
+  color: #fff;
+  padding: 5px 0 0 20px;
+  line-height: 24px;
+
+}
+
+.toggle {
+  width: 20%;
+  float: left;
+  padding: 0 10px 20px 20px;
+}
+
+.alert-overlay {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+}
+
+h1 a {
+  text-decoration: none;
+  color: #fff;
+
+}
