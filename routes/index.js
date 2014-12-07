@@ -40,6 +40,7 @@ router.get('/active', function(req,res){
 
 router.get('/reset', function(req,res){
   inactive = 1.0;
+  dl.lightSwith('PE00000005', 'on');
   res.send('OK');
 });
 
